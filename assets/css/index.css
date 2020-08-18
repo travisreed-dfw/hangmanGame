@@ -1,0 +1,24 @@
+body {
+  font-family: 'Shadows Into Light', cursive;
+}
+.gamePic {
+  height: 35vh;
+}
+
+.btn {
+  font-size: 150%;
+  border: 2px solid black;
+}
+
+img {
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.col-sm-1 {
+  padding: 0%;
+  margin: 1px;
+  display: grid;
+}

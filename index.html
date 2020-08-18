@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Latest compiled and minified CSS -->
+    <script src="./assets/js/index.js"></script>
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row gameInterface">
+        <div class="col-xs-12" id="gamePic">
+          <img
+            id="newGamePic"
+            src="./assets/img/bodyParts/newGame.png"
+            alt="NewGame"
+          />
+        </div>
+        <div id="correct1" class="col-sm-1">
+          <img src="./assets/img/blankLetters/blank.PNG" alt="blank space" />
+        </div>
+        <div id="correct2" class="col-sm-1"></div>
+        <div id="correct3" class="col-sm-1"></div>
+        <div id="correct4" class="col-sm-1"></div>
+        <div id="correct5" class="col-sm-1"></div>
+        <div id="correct6" class="col-sm-1"></div>
+        <div id="correct7" class="col-sm-1"></div>
+        <div id="correct8" class="col-sm-1"></div>
+        <div id="correct9" class="col-sm-1"></div>
+        <div id="correct10" class="col-sm-1"></div>
+        <div id="correct11" class="col-sm-1"></div>
+        <div id="correctScore" class="col-sm-1"></div>
+      </div>
+      <div class="row wrongsRow">
+        <div id="wrong1" class="col-sm-1"></div>
+        <div id="wrong2" class="col-sm-1"></div>
+        <div id="wrong3" class="col-sm-1"></div>
+        <div id="wrong4" class="col-sm-1"></div>
+        <div id="wrong5" class="col-sm-1"></div>
+        <div id="wrong6" class="col-sm-1"></div>
+        <div id="wrong" class="col-sm-1"></div>
+        <div id="wrong" class="col-sm-1"></div>
+        <div id="wrong" class="col-sm-1"></div>
+        <div id="wrong" class="col-sm-1"></div>
+        <div id="wrongScore" class="col-sm-1"></div>
+        <div id="resetGame" class="col-sm-1">
+          <button
+            class="btn btn-danger"
+            id="btnReset"
+            onClick="location.reload();"
+          >
+            Reset Game
+          </button>
+        </div>
+      </div>
+      <div class="row alphabetButtons1">
+        <div class="col-sm-1" id=""></div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="A"
+            value="A"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn disableButton"
+            type="button"
+            id="B"
+            value="B"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn disableButton"
+            type="button"
+            id="C"
+            value="C"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="D"
+            value="D"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="E"
+            value="E"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="F"
+            value="F"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="G"
+            value="G"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="H"
+            value="H"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="I"
+            value="I"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1" id=""></div>
+        <div class="col-sm-1" id=""></div>
+      </div>
+      <div class="row alphabetButtons2">
+        <div class="col-sm-1" id=""></div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="J"
+            value="J"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="K"
+            value="K"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="L"
+            value="L"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="M"
+            value="M"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="N"
+            value="N"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="O"
+            value="O"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="P"
+            value="P"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="Q"
+            value="Q"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="R"
+            value="R"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1" id=""></div>
+        <div class="col-sm-1" id=""></div>
+      </div>
+      <div class="row alphabetButtons3">
+        <div class="col-sm-1" id=""></div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="S"
+            value="S"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="T"
+            value="T"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="U"
+            value="U"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="V"
+            value="V"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="W"
+            value="W"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="X"
+            value="X"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="Y"
+            value="Y"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1">
+          <input
+            class="btn"
+            type="button"
+            id="Z"
+            value="Z"
+            onclick="buttonValue(this)"
+          />
+        </div>
+        <div class="col-sm-1" id=""></div>
+        <div class="col-sm-1" id=""></div>
+        <div class="col-sm-1" id=""></div>
+      </div>
+    </div>
+
+    <script></script>
+  </body>
+</html>
